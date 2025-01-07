@@ -1,0 +1,37 @@
+# Python-specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# macOS-specific files
+.DS_Store
+
+# Linux-specific files
+*~
+
+# Windows-specific files
+Thumbs.db
+ehthumbs.db
+
+# FastAPI and other common folders/files
+*.log
+*.pot
+*.mo
+
+# Emp
+build/
+dist/
+*.egg-info
