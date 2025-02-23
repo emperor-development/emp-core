@@ -38,3 +38,10 @@ class Parser(configparser.ConfigParser):
                            self.get_postgres_host() + r":" + self.get_postgres_port() + r"/" + 
                            self.get_postgres_dbname())
         return connection_str
+
+    def get_sqlalchemy_async_conn_str(self) -> str:
+        connection_str = "postgresql+asyncpg://"
+        connection_str += (self.get_postgres_user() + r":" + self.get_postgres_password() + r"@" + 
+                           self.get_postgres_host() + r":" + self.get_postgres_port() + r"/" + 
+                           self.get_postgres_dbname())
+        return connection_str
